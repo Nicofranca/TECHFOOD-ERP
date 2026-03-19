@@ -1,4 +1,10 @@
 package org.example.service;
 
-public class ControleSalarioServiceImpl {
+import org.example.model.service.ControleSalarioService;
+
+public class ControleSalarioServiceImpl implements ControleSalarioService {
+    @Override
+    public void aumentoSalarial(int id, double aumento) {
+
+    }
 }

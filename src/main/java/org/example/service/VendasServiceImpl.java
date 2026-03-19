@@ -1,4 +1,10 @@
 package org.example.service;
 
-public class VendasServiceImpl {
+import org.example.model.service.VendaService;
+
+public class VendasServiceImpl implements VendaService {
+    @Override
+    public void realizarVenda(int idPrato, int quantidade) {
+
+    }
 }

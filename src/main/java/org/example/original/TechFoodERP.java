@@ -50,8 +50,9 @@ public class TechFoodERP {
                     }
                     break;
                 case 2: // PAGAMENTOS E AUMENTO (Viola SRP e OCP)
-                    System.out.print("Código do funcionário: "); int Cod
-                        = scanner.nextInt();
+                    System.out.print("Código do funcionário: ");
+                    int Cod = scanner.nextInt();
+
                     System.out.print("Porcentagem de aumento (ex: 10):");
                     double aumento = scanner.nextDouble();
                             funcSalarios[Cod] += funcSalarios[Cod] *
@@ -77,10 +78,13 @@ public class TechFoodERP {
                 case 4: // ESTOQUE (Viola SRP)
                     for(int i=0; i<pratoTotal; i ++) System.out.println(i
                             + ": " + pratoNomes[i] + " | Qtd: " + pratoEstoque[i]);
-                    System.out.print("Index para dar entrada: "); int
-                        pCod = scanner.nextInt();
-                    System.out.print("Quantidade para somar: "); int qtd
-                        = scanner.nextInt();
+
+                    System.out.print("Index para dar entrada: ");
+                    int pCod = scanner.nextInt();
+
+                    System.out.print("Quantidade para somar: ");
+                    int qtd = scanner.nextInt();
+
                     pratoEstoque[pCod] += qtd;
                     break;
                 case 5: // VENDA COMPLEXA (Viola SRP, OCP, LSP, ISP, DIP)
@@ -89,7 +93,8 @@ public class TechFoodERP {
                             + ": " + pratoNomes[i] + " [Estoque: " + pratoEstoque[i] + "]");
                     System.out.print("Escolha o prato: "); int esc =
                         scanner.nextInt();
-                    System.out.print("Quantidade: "); int qVenda =
+                    System.out.print("Quantidade: ");
+                    int qVenda =
                         scanner.nextInt();
                     if(pratoEstoque[esc] < qVenda) {
                         System.out.println("ERRO: ESTOQUE INSUFICIENTE!");
