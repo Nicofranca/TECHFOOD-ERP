@@ -6,6 +6,7 @@ import org.example.model.service.CardapioService;
 import java.util.List;
 
 public class CardapioServiceImpl implements CardapioService {
+
     @Override
     public List<Prato> listarCardapio() {
         return List.of();
