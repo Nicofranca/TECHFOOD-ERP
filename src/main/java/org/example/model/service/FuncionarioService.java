@@ -12,5 +12,5 @@ public interface FuncionarioService {
 
     void demitirFuncionario(int id);
 
-    Funcionario editarFuncionario(String nome, String cargo, Double salario);
+    Funcionario editarFuncionario(Funcionario funcionario);
 }

@@ -8,6 +8,12 @@ import java.util.List;
 
 public class FuncionarioServiceImpl implements FuncionarioService {
 
+    private List<Funcionario> funcionarios;
+
+    public FuncionarioServiceImpl(List<Funcionario> funcionarios) {
+        this.funcionarios = funcionarios;
+    }
+
     @Override
     public List<Funcionario> listarFuncionarios() {
         return List.of();
@@ -19,11 +25,18 @@ public class FuncionarioServiceImpl implements FuncionarioService {
         if(funcionario == null){
             throw new RuntimeException("Os campos tem que ser preenchidos! ");
         }
+
+        funcionarios.add(funcionario);
+
         return funcionario;
     }
 
     @Override
     public void demitirFuncionario(int id) {
+
+        System.out.println("Funcionario: "+funcionarios.get(id).getNome());
+
+        funcionarios.remove(id);
 
     }
 

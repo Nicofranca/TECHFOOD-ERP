@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class FuncionarioView {
 
     Scanner scanner = new Scanner(System.in);
-    private Funcionario funcionario;
+    public Funcionario funcionario;
 
     public FuncionarioView(Funcionario funcionario) {
         this.funcionario = funcionario;
@@ -47,5 +47,26 @@ public class FuncionarioView {
         int id = scanner.nextInt();
 
         return id;
+    }
+
+    public Funcionario editarFuncionario(){
+        System.out.println("Insira o ID: ");
+        int id = scanner.nextInt();
+
+        System.out.print("Nome: ");
+        String nome = scanner.nextLine();
+
+        System.out.print("Cargo: ");
+        String cargo = scanner.nextLine();
+
+        System.out.print("Salário: ");
+        Double salario = scanner.nextDouble();
+
+        funcionario.setId(id);
+        funcionario.setNome(nome);
+        funcionario.setCargo(cargo);
+        funcionario.setSalario(salario);
+
+        return funcionario;
     }
 }

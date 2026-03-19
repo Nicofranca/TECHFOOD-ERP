@@ -21,11 +21,13 @@ public class FuncionarioController {
 
             switch (escolha){
                 case 1 -> funcionarioService.listarFuncionarios();
+
                 case 2 -> funcionarioService.contratarFuncionario(
-                        funcionarioView.contratarFuncionario()
-                );
+                        funcionarioView.contratarFuncionario());
 
                 case 3 -> funcionarioService.demitirFuncionario(funcionarioView.demitirFuncionario());
+
+                case 4 -> funcionarioService.editarFuncionario(funcionarioView.editarFuncionario());
             }
         } while (escolha!=0);
     }
