@@ -1,4 +1,4 @@
-package org.example;
+package org.example.original;
 
 import java.util.Scanner;
 public class TechFoodERP {
@@ -12,6 +12,7 @@ public class TechFoodERP {
     private static int[] pratoEstoque = new int[20];
     private static int pratoTotal = 0;
     private static double faturamentoAtum = 0;
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         inicializarDados();
@@ -140,16 +141,26 @@ public class TechFoodERP {
         funcSalarios[8] = 2200;
         funcTotal = 9;
 // Pratos Brasileiros
-        pratoNomes[0] = "Feijoada Completa"; pratoPrecos[0] = 45.0;
+        pratoNomes[0] = "Feijoada Completa";
+        pratoPrecos[0] = 45.0;
         pratoEstoque[0] = 10;
-        pratoNomes[1] = "Moqueca de Peixe"; pratoPrecos[1] = 65.0;
+
+        pratoNomes[1] = "Moqueca de Peixe";
+        pratoPrecos[1] = 65.0;
         pratoEstoque[1] = 5;
-        pratoNomes[2] = "Baião de Dois"; pratoPrecos[2] = 35.0;
+
+        pratoNomes[2] = "Baião de Dois";
+        pratoPrecos[2] = 35.0;
         pratoEstoque[2] = 8;
-        pratoNomes[3] = "Acarajé"; pratoPrecos[3] = 25.0; pratoEstoque[3]
-                = 15;
-        pratoNomes[4] = "Pato no Tucupi"; pratoPrecos[4] = 80.0;
+
+        pratoNomes[3] = "Acarajé";
+        pratoPrecos[3] = 25.0;
+        pratoEstoque[3] = 15;
+
+        pratoNomes[4] = "Pato no Tucupi";
+        pratoPrecos[4] = 80.0;
         pratoEstoque[4] = 3;
+
         pratoNomes[5] = "Vaca Atolada"; pratoPrecos[5] = 40.0;
         pratoEstoque[5] = 7;
         pratoNomes[6] = "Arroz Carreteiro"; pratoPrecos[6] = 30.0;
