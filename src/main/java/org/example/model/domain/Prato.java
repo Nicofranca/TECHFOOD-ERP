@@ -1,17 +1,27 @@
 package org.example.model.domain;
 
 public class Prato {
+    private int id;
     private String nome;
     private Double preco;
     private int esetoque;
 
-    public Prato(String nome, Double preco, int esetoque) {
+    public Prato(int id, String nome, Double preco, int esetoque) {
+        this.id = id;
         this.nome = nome;
         this.preco = preco;
         this.esetoque = esetoque;
     }
 
     public Prato() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
