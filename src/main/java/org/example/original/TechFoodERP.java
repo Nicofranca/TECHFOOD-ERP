@@ -101,9 +101,13 @@ public class TechFoodERP {
                         break;
                     }
                     double valorBase = pratoPrecos[esc] * qVenda;
-                    System.out.print("1-Presencial / 2-Delivery: "); int
-                        tipoVenda = scanner.nextInt();
+
+                    System.out.print("1-Presencial / 2-Delivery: ");
+                    int tipoVenda = scanner.nextInt();
+
                     if(tipoVenda == 2) valorBase += 15.0; // Frete Fixo (Fere OCP)
+
+
                     System.out.println("Pagamento: 1-Crédito / 2-Débito /3-PIX / 4-Espécie");
                     int pg = scanner.nextInt();
                     double valorFinal = valorBase;

@@ -6,7 +6,10 @@ public class MainView {
 
     Scanner scanner = new Scanner(System.in);
 
-    private int menuInicial(){
+    public MainView() {
+    }
+
+    public int menuInicial(){
 
         int opcao;
         System.out.println("\n - TECHFOOD ERP - MENU PRINCIPAL -");
@@ -22,4 +25,6 @@ public class MainView {
 
         return opcao;
     }
+
+
 }
